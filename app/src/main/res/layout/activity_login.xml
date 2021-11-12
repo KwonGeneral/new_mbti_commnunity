@@ -143,6 +143,7 @@
                             android:imeOptions="actionDone"
                             android:inputType="text"
                             android:paddingEnd="25dp"
+                            android:maxLength="20"
                             android:textColor="#baffffff"
                             android:textColorHighlight="@color/design_default_color_primary"
                             android:textCursorDrawable="@drawable/input_cursor"
@@ -150,9 +151,10 @@
 
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <View
+                    <androidx.appcompat.widget.AppCompatCheckBox
                         android:id="@+id/login_username_circle"
                         android:layout_width="15dp"
+                        android:clickable="false"
                         android:layout_height="15dp"
                         android:layout_alignEnd="@id/login_username_layout"
                         android:layout_marginTop="35dp"
@@ -186,6 +188,7 @@
                             android:imeOptions="actionDone"
                             android:inputType="textPassword"
                             android:paddingEnd="25dp"
+                            android:maxLength="20"
                             android:textColor="#baffffff"
                             android:textColorHighlight="@color/design_default_color_primary"
                             android:textCursorDrawable="@drawable/input_cursor"
@@ -193,7 +196,7 @@
 
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <View
+                    <androidx.appcompat.widget.AppCompatCheckBox
                         android:id="@+id/login_password_circle"
                         android:layout_width="15dp"
                         android:layout_height="15dp"

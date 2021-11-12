@@ -13,17 +13,11 @@ import com.kwon.new_mbti_community.Contain.SharedDefine.Companion.SHARED_DEFAULT
 import com.kwon.new_mbti_community.R
 
 class StartActivity : AppCompatActivity() {
-    // 권한 체크
-    val permission_list = arrayOf(
-        Manifest.permission.INTERNET,
-        Manifest.permission.ACCESS_NETWORK_STATE,
-        Manifest.permission.READ_EXTERNAL_STORAGE,
-    )
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_start)
-        requestPermissions(permission_list, 0)
 
         startActivity(Intent(this, LoginActivity::class.java))
 //        // 자동 로그인 여부 확인

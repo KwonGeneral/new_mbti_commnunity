@@ -7,8 +7,8 @@ import java.lang.Exception
 class SharedDB(context: Context) {
 
     companion object {
-        var ins:SharedDB? = null
-        fun getInstance(context: Context):SharedDB? {
+        var ins: SharedDB? = null
+        fun getInstance(context: Context): SharedDB? {
             if (ins == null)
                 ins = SharedDB(context)
             return ins
@@ -32,6 +32,17 @@ class SharedDB(context: Context) {
 
     fun getToken(): String {
         return prefs.getString("AccessToken", "").toString()
+    }
+
+    fun getFcmToken(): String {
+        return prefs.getString("fcm_token", "").toString()
+    }
+
+    fun setFcmToken(fcm_token: String) {
+        prefs.edit().putString("fcm_token", fcm_token).apply()
+    }
+    fun isAutoLogin(): Boolean? {
+        return false
     }
 
 }

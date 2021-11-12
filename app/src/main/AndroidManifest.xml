@@ -18,7 +18,8 @@
         android:theme="@style/CustomTheme">
         <activity
             android:name=".NonMember.SignupActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".ChainActivity"
             android:exported="false" />
