@@ -20,15 +20,6 @@
         <item name="android:layout_marginTop">10dp</item>
         <item name="boxCollapsedPaddingTop">4dp</item>
         <item name="android:textColorHint">#4affffff</item>
-
-<!--        <item name="colorControlNormal">@color/colorPrimary</item>  // unFocus 상태일때 밑줄 색.-->
-<!--        <item name="boxStrokeColor">@color/colorPrimary</item> // Focus 상태일때 밑줄 색.-->
-<!--        <item name="android:textCursorDrawable">@color/colorPrimary</item>  // cursor 색.-->
-<!--        <item name="android:textColorHint">@color/colorPrimary</item>  // hint 색-->
-<!--        <item name="hintTextColor">@color/colorPrimary</item>   // floating hint 색-->
-<!--        <item name="helperText">@color/colorPrimary</item> // xml 에서 한 속성을 여기서도 할 수 있습니다.-->
-<!--        <item name="helperTextTextColor">@color/colorPrimary</item>-->
-<!--        <item name="errorTextColor">@color/colorPrimary</item>-->
     </style>
     <style name="TextEditText" parent="Widget.AppCompat.EditText">
         <item name="android:fontFamily">@font/noto_regular</item>

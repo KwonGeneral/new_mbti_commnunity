@@ -135,8 +135,8 @@ class LoginActivity : AppCompatActivity() {
                     login_username_input.text.toString(),
                     login_password_input.text.toString()
                 )
-
             }
+
             // 회원가입 버튼 클릭 이벤트
             login_signup_btn.setOnClickListener {
                 login.signUp()

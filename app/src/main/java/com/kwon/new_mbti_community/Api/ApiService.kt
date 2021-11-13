@@ -58,19 +58,16 @@ class ApiService(context: Context) {
     // subscribeOn은 쓰레드 지정
     // observeOn도 쓰레드 지정으로 보이는데, 뭔지 찾아보자.
     fun loginApi(username: String, password: String, fcm_token: String) =
-
         RxService.create(con, CheckService::class.java).login(
             Hash().login_hash(
                 username,
                 PasswordCheck().password_aes256(password),
                 fcm_token
-            )
-        )
+            ))
             .subscribeOn(Schedulers.io())
             .map { t ->
                 if (t.isSuccessful) {
-
-                    return@map t.body()
+                    return@map t.body()!!
                 } else {
                     throw HttpException(t)
                 }

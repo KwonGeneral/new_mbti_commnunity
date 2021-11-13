@@ -12,6 +12,6 @@ interface CheckService {
     @POST("/account/user/login/")
     fun login(
         @Body parameters: HashMap<String, String>
-    ): Maybe<Response<UserData>>
+    ): Maybe<Response<UserData?>>
 //    ): Call<UserData>
 }
