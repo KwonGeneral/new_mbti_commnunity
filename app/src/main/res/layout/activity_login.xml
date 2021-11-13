@@ -118,7 +118,8 @@
                     android:textColor="#ff0000"
                     android:textSize="14sp" />
 
-                <RelativeLayout
+                <com.kwon.new_mbti_community.view.MyRelative
+                    app:status="id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -129,7 +130,7 @@
                         style="@style/TextInputLayout"
                         android:hint="@string/id_text">
 
-                        <com.google.android.material.textfield.TextInputEditText
+                        <androidx.appcompat.widget.AppCompatEditText
                             android:id="@+id/login_username_input"
                             style="@style/TextEditText"
                             android:layout_width="match_parent"
@@ -146,42 +147,29 @@
                         android:background="@drawable/check_circle"
                         android:backgroundTint="#66CDCDCD" />
 
-                </RelativeLayout>
+                </com.kwon.new_mbti_community.view.MyRelative>
 
-                <RelativeLayout
+                <com.kwon.new_mbti_community.view.MyRelative
+                    app:status="password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/login_password_layout"
+                        style="@style/TextInputLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="60dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="60dp"
-                        android:hint="@string/password_text"
-                        android:textColorHint="#4affffff"
-                        app:boxCollapsedPaddingTop="4dp">
+                        android:hint="@string/password_text">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/login_password_input"
-                            style="@style/noto_regular"
+                            style="@style/TextEditText"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:backgroundTint="@android:color/transparent"
-                            android:gravity="bottom"
-                            android:imeOptions="actionDone"
-                            android:inputType="textPassword"
-                            android:paddingEnd="25dp"
-                            android:maxLength="20"
-                            android:textColor="#baffffff"
-                            android:textColorHighlight="@color/design_default_color_primary"
-                            android:textCursorDrawable="@drawable/input_cursor"
-                            android:textSize="14sp" />
+                            android:layout_height="wrap_content" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <androidx.appcompat.widget.AppCompatCheckBox
+                    <View
                         android:id="@+id/login_password_circle"
                         android:clickable="false"
                         android:layout_width="15dp"
@@ -191,7 +179,7 @@
                         android:background="@drawable/check_circle"
                         android:backgroundTint="#66CDCDCD" />
 
-                </RelativeLayout>
+                </com.kwon.new_mbti_community.view.MyRelative>
 
                 <TextView
                     android:id="@+id/find_password_text"

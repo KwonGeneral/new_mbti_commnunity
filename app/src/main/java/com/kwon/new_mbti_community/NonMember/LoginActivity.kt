@@ -43,7 +43,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-
+        Log.d("TEST", "로그인 액티비티~!")
 
         // ADS
         MbtiApplication().getADS(this, login_adv)
@@ -140,7 +140,6 @@ class LoginActivity : AppCompatActivity() {
             // 회원가입 버튼 클릭 이벤트
             login_signup_btn.setOnClickListener {
                 login.signUp()
-
             }
         }
 
