@@ -30,7 +30,7 @@ class LoginSignupViewModel(val context: Context) {
     }
 
     init {
-        status.value = ApiStatus.FAIL_LOGIN
+//        status.value = ApiStatus.FAIL_LOGIN
         autoLogin.value = SharedDB(context).isAutoLogin()
     }
 
