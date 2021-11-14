@@ -31,6 +31,8 @@ import androidx.appcompat.widget.AppCompatTextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.res.TypedArrayUtils.getText
 import com.kwon.new_mbti_community.Contain.ColorStatus
+import com.kwon.new_mbti_community.Contain.RegDefine.Companion.USERNAME_REG
+import com.kwon.new_mbti_community.MbtiApplication
 import com.kwon.new_mbti_community.R
 import kotlinx.android.synthetic.main.activity_login.view.*
 
@@ -95,6 +97,7 @@ class MyRelative @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
 ) : RelativeLayout(context, attrs) {
     var status: String? = ""
+    var mbtiApplication: MbtiApplication? = null
 
     init {
         val typedArray = context.obtainStyledAttributes(attrs, R.styleable.MyRelative)
