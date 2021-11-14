@@ -125,16 +125,31 @@ class MyRelative @JvmOverloads constructor(
         super.onLayout(changed, l, t, r, b)
         when(status) {
             "id" -> {
-                if(login_username_input.text.toString() == "test") {
-                    login_username_circle.backgroundTintList = ColorStateList.valueOf(Color.parseColor(ColorStatus.TEXT_FAIL.color))
+                when(login_username_input.text.toString()) {
+                    "test" -> {login_username_circle.isChecked = true}
+                    else -> {login_username_circle.isChecked = false}
                 }
             }
             "password" -> {
-                if(login_password_input.text.toString() == "test") {
-                    login_password_circle.backgroundTintList = ColorStateList.valueOf(Color.parseColor(ColorStatus.TEXT_FAIL.color))
+                when(login_password_input.text.toString()) {
+                    "test" -> {login_password_circle.isChecked = true}
+                    else -> {login_password_circle.isChecked = false}
                 }
             }
         }
+//        when(status) {
+//            "id" -> {
+//                if(login_username_input.text.toString() == "test") {
+//                    login_username_circle.isClickable = true
+//                }
+//
+//            }
+//            "password" -> {
+//                if(login_password_input.text.toString() == "test") {
+//                    login_password_circle.isClickable = true
+//                }
+//            }
+//        }
     }
 }
 

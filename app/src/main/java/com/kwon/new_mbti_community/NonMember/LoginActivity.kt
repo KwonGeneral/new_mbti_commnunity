@@ -14,6 +14,7 @@ import android.widget.Toast
 import androidx.appcompat.widget.AppCompatCheckBox
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.messaging.FirebaseMessaging
+import com.jakewharton.rxbinding4.widget.checkedChanges
 import com.kwon.new_mbti_community.Api.ApiService
 import com.kwon.new_mbti_community.ChainActivity
 import com.kwon.new_mbti_community.Common.*
@@ -107,7 +108,6 @@ class LoginActivity : AppCompatActivity() {
         })*/
 
         LoginSignupViewModel(this)?.let { login ->
-
             login.autoLogin.observe(this, {
                 login_auto_check_btn.isChecked = it
             })
@@ -149,18 +149,18 @@ class LoginActivity : AppCompatActivity() {
     // 텍스트 입력창 변화 시, 이벤트
     private val textWatcher: TextWatcher = object : TextWatcher {
         override fun onTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
-            // 아이디
-            MbtiApplication().editCheckViewColor(
-                USERNAME_REG,
-                login_username_input,
-                login_username_circle
-            )
-            // 패스워드
-            MbtiApplication().editCheckViewColor(
-                USERNAME_REG,
-                login_password_input,
-                login_password_circle
-            )
+//            // 아이디
+//            MbtiApplication().editCheckViewColor(
+//                USERNAME_REG,
+//                login_username_input,
+//                login_username_circle
+//            )
+//            // 패스워드
+//            MbtiApplication().editCheckViewColor(
+//                USERNAME_REG,
+//                login_password_input,
+//                login_password_circle
+//            )
         }
 
         override fun afterTextChanged(s: Editable?) {}

@@ -138,14 +138,19 @@
 
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <View
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        style="@style/customCheckBox"
                         android:id="@+id/login_username_circle"
-                        android:layout_width="15dp"
-                        android:layout_height="15dp"
-                        android:layout_alignEnd="@id/login_username_layout"
-                        android:layout_marginTop="35dp"
-                        android:background="@drawable/check_circle"
-                        android:backgroundTint="#66CDCDCD" />
+                        android:layout_alignEnd="@id/login_username_layout" />
+<!--                    <View-->
+<!--                        android:id="@+id/login_username_circle"-->
+<!--                        android:layout_width="15dp"-->
+<!--                        android:layout_height="15dp"-->
+<!--                        android:layout_alignEnd="@id/login_username_layout"-->
+<!--                        android:layout_marginTop="35dp"-->
+<!--                        android:background="@drawable/check_circle"-->
+<!--                        android:backgroundTint="#66CDCDCD" -->
+<!--                        />-->
 
                 </com.kwon.new_mbti_community.view.MyRelative>
 
@@ -169,15 +174,20 @@
 
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <View
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        style="@style/customCheckBox"
                         android:id="@+id/login_password_circle"
-                        android:clickable="false"
-                        android:layout_width="15dp"
-                        android:layout_height="15dp"
-                        android:layout_alignEnd="@id/login_password_layout"
-                        android:layout_marginTop="35dp"
-                        android:background="@drawable/check_circle"
-                        android:backgroundTint="#66CDCDCD" />
+                        android:layout_alignEnd="@id/login_password_layout" />
+
+<!--                    <View-->
+<!--                        android:id="@+id/login_password_circle"-->
+<!--                        android:clickable="false"-->
+<!--                        android:layout_width="15dp"-->
+<!--                        android:layout_height="15dp"-->
+<!--                        android:layout_alignEnd="@id/login_password_layout"-->
+<!--                        android:layout_marginTop="35dp"-->
+<!--                        android:background="@drawable/check_circle"-->
+<!--                        android:backgroundTint="#66CDCDCD" />-->
 
                 </com.kwon.new_mbti_community.view.MyRelative>
 
